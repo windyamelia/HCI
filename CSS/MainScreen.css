@@ -1,0 +1,239 @@
+.menu {
+	font-family : "Calibri";
+	background-color : #3E3E33;
+	display	: table;
+	position : static;
+	height 	: 25px;
+	width 	: 100%;
+	vertical-align : middle;
+}
+
+#NatSafe {
+	font-family: 'Exo', sans-serif;
+	font-weight: bold;
+	font-size : 18px;
+	display : block;
+	vertical-align : middle;
+}
+
+#login {
+	text-align : right;
+	margin-left : 1150px;
+}
+
+.body {
+	height : 543px;
+	display : block;
+}
+
+#newsTitle {
+	font-size : 25px;
+	color : #FF9933;
+}
+
+#newsDate {
+	font-style : italic;
+}
+
+#news { 
+	text-align : justify;
+}
+
+.footer {
+	font-family : "Calibri";
+	color : white;
+	position : bottom;
+	background-color : #3E3E33;
+	display	: block;
+	height 	: 35px;
+	width 	: 100%;
+	font-size : 15px;
+}
+
+#about {
+	margin-left : 1050px;
+}
+
+.disasterInfo {
+	width : 700px;
+	float : left;
+}
+
+.help {
+	font-family : "calibri";
+	border-left: thin solid #000000;
+	width : 350px;
+	float : right;
+}
+
+.help p {
+	padding-left : 30px;
+	font-size : 30px;
+}
+
+.help ul {
+	list-style-type	: none;
+	margin : 0;
+	padding-left : 40px;
+}
+
+.help li {
+	padding-bottom : 5px;
+}
+
+.help ul li a,
+.help ul li a:focus,
+.help ul li a:visited,
+.help ul li a:hover,
+.help ul li a:active {
+	color : #707676;
+	text-decoration : none;
+}
+
+.help ul li a:hover {
+	color 	: #FF9933;
+}
+
+#helpspace {
+	height : 330px;
+}
+
+nav {
+	margin-left : 0px;
+}
+nav ul
+{
+	list-style-type	: none;
+	margin			: 0;
+	padding-left	: 0;
+}
+
+nav li
+{
+	display		: inline;
+	float		: left;
+	padding 	: 8px;
+	padding-left : 20px;
+}
+
+nav ul li a,
+nav ul li a:focus,
+nav ul li a:visited,
+nav ul li a:hover,
+nav ul li a:active {
+	color : #FFFFFF;
+	text-decoration : none; 
+}
+
+nav ul li a:hover {
+	color : #FF9933;
+}
+::-webkit-input-placeholder{
+   color : rgba(0,0,0,0.6);
+}
+
+::-moz-input-placeholder{
+   color : rgba(0,0,0,0.6);
+}
+
+.login{
+	position : absolute;
+	top : calc(40% - 75px);
+	left : calc(50% - 50px);
+	height : 150px;
+	width : 350px;
+	padding : 10px;
+	z-index : 2;
+}
+
+.login input[type=text]{
+	width : 250px;
+	height : 30px;
+	background : #ffffff;
+	border : 1px solid rgba(62,62,62,0.6);
+	border-radius : 2px;
+	color : #000000;
+	font-family : 'Exo', sans-serif;
+	font-size : 16px;
+	font-weight : 400;
+	padding : 4px;
+}
+
+.login input[type=password]{
+	width : 250px;
+	height : 30px;
+	background : #ffffff;
+	border : 1px solid rgba(62,62,62,0.6);
+	border-radius : 2px;
+	color : #000000;
+	font-family : 'Exo', sans-serif;
+	font-size : 16px;
+	font-weight : 400;
+	padding : 4px;
+	margin-top : 10px;
+}
+
+.login input[type=submit]{
+	width : 260px;
+	height : 35px;
+	background : #3E3E33;
+	border : 1px solid #fff;
+	cursor : pointer;
+	border-radius : 2px;
+	color : #ffffff;
+	font-family : 'Exo', sans-serif;
+	font-size : 16px;
+	font-weight : 400;
+	padding : 6px;
+	margin-top : 10px;
+}
+
+.login input[type=submit]:hover{
+	opacity : 0.8;
+}
+
+.login input[type=submit]:active{
+	opacity : 0.6;
+}
+
+.login input[type=text]:focus{
+	outline : none;
+	border : 1px solid rgba(255,153,51,0.9);
+}
+
+.login input[type=password]:focus{
+	outline : none;
+	border : 1px solid rgba(255,153,51,0.9);
+}
+
+.login input[type=submit]:focus{
+	outline: none;
+}
+
+.login img {
+	width : 43%;
+}
+
+.NatSafeDesc{
+	position : absolute;
+	top : calc(38% - 35px);
+	left: calc(50% - 255px);
+	z-index : 2;
+}
+
+.NatSafeDesc div{
+	float : left;
+	color : #3E3E33;
+	font-family : 'Exo', sans-serif;
+	font-size : 35px;
+	font-weight : 200;
+}
+
+.NatSafeDesc div span{
+	color : #FF9933;
+}
+
+.NatSafeDesc div div{
+	font-size : 15px;
+	color : #3E3E33;
+}
