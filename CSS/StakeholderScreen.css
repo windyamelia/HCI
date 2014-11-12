@@ -79,55 +79,40 @@ nav ul li a:hover {
 }
 
 .container {
-	margin-left : 350px;
-	width : 640px;
-	text-align : center;
-
-	.progress {
-		margin : 0 auto;
-		width : 400px;
-	}
+	padding-left : 540px;
 }
 
-.progress {
-	padding : 4px;
-	background : rgba(black, .25);
-	border-radius : 6px;
-	@include box-shadow(inset 0 1px 2px rgba(black, .25),0 1px rgba(white, .08));
+progress {
+  width: 300px;
+  height: 17px;
+        display: block;
+        /* turn off defaults */
+        -webkit-appearance: none;
+        border: none;
 }
 
-.progress-bar {
-	position : relative;
-	height : 16px;
-	border-radius : 4px;
-	@include transition(.4s linear);
-	@include transition-property(width, background-color);
-	@include box-shadow(0 0 1px 1px rgba(black, .25),
-					  inset 0 1px rgba(white, .1));
-
-	&:before, &:after {
-	content : '';
-	position : absolute;
-	top: 0;
-	left : 0;
-	right : 0;
+progress::-webkit-progress-bar {
+        background: black;
+        border-radius: 50px;
+        padding: 2px;
+        box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
 }
 
-  &:before {
-    bottom : 0;
-    background : url('../img/stripes.png') 0 0 repeat;
-    border-radius : 4px 4px 0 0;
-  }
-
-  &:after {
-    z-index : 2;
-    bottom : 45%;
-    border-radius : 4px;
-    @include linear-gradient(top, rgba(white, .3), rgba(white, .05));
-  }
+progress::-webkit-progress-value {
+        border-radius: 50px;
+        box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+        background:
+                -webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
+                -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+                -webkit-linear-gradient(left, red, #ba7448);
+         
+        background-size: 25px 14px, 100% 100%, 100% 100%;
+         
+        /*This sets up the animation */
+        -webkit-animation: move 5s linear 0 infinite;
 }
-
-.progress > .progress-bar {
-  width : 75%;
-  background-color : #f2d31b;
+ 
+@-webkit-keyframes move {
+        0% {background-position: 0px 0px, 0 0, 0 0}
+        100% {background-position: -100px 0px, 0 0, 0 0}
 }

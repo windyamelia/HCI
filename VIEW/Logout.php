@@ -42,11 +42,9 @@
 		<br>
 		<div class="body">
 			<section class="container">
-				<div class="progress">
-				  <div class="progress-bar"> </div>
-				</div>
+				<progress value="0.5"></progress>
 				<br>
-				Securing Your Data 75%
+				Securing Your Data . . .
 		    </section>
 		</div>
 		<br>
